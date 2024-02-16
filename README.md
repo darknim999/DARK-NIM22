@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://chat.whatsapp.com/ESB8e9HAS2wGlwBvzGYnLx">
-    <img alt=Support height="300" src="https://telegra.ph/file/153fa67a18b16949274ba.jpg"> 
+    <img alt=Support height="350" src="https://telegra.ph/file/153fa67a18b16949274ba.jpg"> 
     </p>
 
  
@@ -52,7 +52,7 @@
 
  <p align="center">  
  <a href="https://telegra.ph/file/896953d764d69c906a4b7.jpg">
-    <img alt="FORZEN MD MD OWNER" height="80" src="https://telegra.ph/file/5712bea4ea7560cfb8f5f.jpg">
+    <img alt="FORZEN MD MD OWNER" height="180" src="https://telegra.ph/file/5712bea4ea7560cfb8f5f.jpg">
 
 **[» Contact For](https://wa.me/+94784280074)**
 ㅤ
@@ -60,20 +60,3 @@
  ---
 
 
-
-
-
-
-
-
-
-<p align="center">
-  <a href="https://chat.whatsapp.com/ESB8e9HAS2wGlwBvzGYnLx">
-    <img alt=Support height="260" src="https://telegra.ph/file/153fa67a18b16949274ba.jpg"> 
-    </p>
-
-
-  ***scan qr*** https://blade-md-qr.onrender.com/      
-
-
- [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/darknim999/DARK-NIM-MD)
