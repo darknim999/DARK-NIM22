@@ -2,13 +2,13 @@
   "name": "DARK-NIM-MD",
   "description": "A Whatsapp md bot built in NodeJs to make experience better",
   "logo": "https://telegra.ph/file/2be86bccd6deaccb6f347.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot","DARK-NIM-MD","DARK NIM","theme bot","multi device","baileys","Alex tv"],
+  "keywords": ["nodejs", "bot", "whatsapp bot", "Zero-Two", "blade Bot", "blade","BLADE-MD","theme bot","multi device","baileys","Alex tv"],
   "success_url": "/",
   "stack": "container",
 "env": {
   "OWNER_NAME": {
   "description": "BOT OWNER NAME", 
-      "value": "DARK NIM"
+      "value": "Nimsara"
   },
   "ALIVE_MESSAGE": {
     "description": " SET YOUR ALIVE MESSAGE FOR THE BOT",
