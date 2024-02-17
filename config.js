@@ -19,7 +19,7 @@ module.exports = {
   author:  process.env.PACK_AUTHER ||  'DARK-NIM',
   packname:  process.env.PACK_NAME || 'MADE BY DARK',
   
-  botname:   process.env.BOT_NAME === undefined ? "DARK NIM" : process.env.BOT_NAME,
+  botname:   process.env.BOT_NAME === undefined ? "DARK-NIM-MD" : process.env.BOT_NAME,
   ownername: process.env.OWNER_NAME === undefined ? 'alexdavid' : process.env.OWNER_NAME,  
   auto_read_status :  process.env.AUTO_READ_STATUS === undefined ? false : process.env.AUTO_READ_STATUS,
   autoreaction:  process.env.AUTO_REACTION  === undefined ? false : process.env.AUTO_REACTION ,
