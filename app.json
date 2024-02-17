@@ -105,7 +105,7 @@
   },
   "PACK_NAME": {
     "description": "PUT STICKER PACK NAME",
-    "value": "DARK NIM"
+    "value": "DARK-NIM"
   },
   "heroku": {
     "description": "Weather it is on heroku or not", 
