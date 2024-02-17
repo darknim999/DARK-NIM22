@@ -1,11 +1,18 @@
 /**
+██╗███████╗██╗   ██╗██╗  ██╗██╗   ██╗    ███╗   ███╗██████╗ 
+██║╚══███╔╝██║   ██║██║ ██╔╝██║   ██║    ████╗ ████║██╔══██╗
+██║  ███╔╝ ██║   ██║█████╔╝ ██║   ██║    ██╔████╔██║██║  ██║
+██║ ███╔╝  ██║   ██║██╔═██╗ ██║   ██║    ██║╚██╔╝██║██║  ██║
+██║███████╗╚██████╔╝██║  ██╗╚██████╔╝    ██║ ╚═╝ ██║██████╔╝
+╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝     ╚═╝╚═════╝ 
+                                                            
  Copyright (C) 2022.
  Licensed under the  GPL-3.0 License;
  You may not use this file except in compliance with the License.
  It is supplied in the hope that it may be useful.
- * @project_name : Secktor-Md
- * @author : SamPandey001 <https://github.com/SamPandey001>
- * @description : Secktor,A Multi-functional whatsapp bot.
+ * @project_name : Izuku-Md
+ * @author : excel <https://github.com/excelottah6>
+ * @description : Izuku,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
 
@@ -65,8 +72,9 @@ async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
     if(!citel.isGroup) return citel.reply(tlang().group)
           let Group = await sck.findOne({ id: citel.chat })
-            if (!Group) {return citel.reply('There\'s no unmute set in group.') }
-            else {
+            if (!Group) {
+                return citel.reply('There\'s no unmute set in group.')
+            } else {
                 await await sck.updateOne({ id: citel.chat }, { unmute:'false' })
                 return citel.reply('Unmute deleted successfully.')
                 
@@ -83,8 +91,9 @@ async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner)
     if(!citel.isGroup) return citel.reply(tlang().group)
           let Group = await sck.findOne({ id: citel.chat })
-            if (!Group) { return citel.reply('There\'s no mute set in group.') }
-            else {
+            if (!Group) {
+                return citel.reply('There\'s no mute set in group.')
+            } else {
                 await await sck.updateOne({ id: citel.chat }, { mute:'false' })
                 return citel.reply('Mute deleted successfully.')
                 

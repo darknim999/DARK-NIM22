@@ -1,43 +1,14 @@
-/**
- Copyright (C) 2022.
- Licensed under the  GPL-3.0 License;
- You may not use this file except in compliance with the License.
- It is supplied in the hope that it may be useful.
- * @project_name : BLADE-MD
- * @author : salmanytofficial <https://github.com/Bladeh4x>
- * @description : BLADE, A Multi-functional whatsapp bot.
- * @version 0.0.6
- **/
-
 const { tlang, botpic, cmd, prefix, runtime, Config , sleep } = require('../lib')
 const axios = require('axios')
 const speed = require('performance-now')
 const fetch = require('node-fetch');
-
-
-const PastebinAPI = require("pastebin-js");
-pastebin = new PastebinAPI("EMWTMkQAVfJa9kM-MRUrxd5Oku1U7pgL");
-cmd({
-        pattern: "pastebin",
-        desc: "To check ping",
-        category: "extra",
-        filename: __filename,
-    },
-    async(Void, citel) => {
-        if(!citel.quoted) return citel.reply('Please quote any text to get link.')
-        let data = await pastebin.createPaste(citel.quoted.text, "Secktor-Pastebin")
-        citel.reply('_Here is your link._\n'+data)
-    }
-);
-
-
 //---------------------------------------------------------------------------
 cmd({
     pattern: "chat",
     alias :['gpt'],
     desc: "chat with an AI(GPT)",
     category: "AI",
-    use: '<Hii,blade>',
+    use: '<Hii,how can i help you>',
     filename: __filename,
 },
 async(Void, citel,text) => {
@@ -132,17 +103,15 @@ cmd({
         filename: __filename,
     },
     async(Void, citel) => {
-        let { data } = await axios.get('https://api.github.com/repos/Bladeh4x/BLADE-MD')
+        let { data } = await axios.get('https://api.github.com/repos/Maccoder3/MAC-MD')
         let cap = `Hey ${citel.pushName}\n
-*⭐ Total Stars:* ${data.stargazers_count} stars
-*🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* https://github.com/Bladeh4x/BLADE-MD
-*Group:* https://chat.whatsapp.com/DLniUfYVWR50sbkZDR8tBI
-*public grp:* https://chat.whatsapp.com/HTTzf69NNqWEU2v2yc7r0E
-*scan Qr:* https://blade-md-qr.onrender.com/
-*youtube tt:* https://youtu.be/YLG9OYERa5I?si=1e5cbrtKVc8aL5BI
-*Deploy Your Own:*-
-https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FBladeh4x%2FBLADE-MD&template=https%3A%2F%2Fgithub.com%2FBladeh4x%2FBLADE-MD`
+╭┈────────────    .· * • ˚
+│*⭐ Total Stars:* ${data.stargazers_count} stars
+│*🍴 Forks:* ${data.forks_count} forks
+│*📡 Repo:* https://github.com/Maccoder3/MAC-MD
+│*🏘Group:* https://chat.whatsapp.com/IpDbNkTpz1l520HHFuS7B7
+│*🧑‍💻Deploy MAC MD*:https://github.com/Maccoder3/MAC-MD
+╰──────────────✬      * ˚  ✶`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -150,7 +119,7 @@ https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FBladeh4x%
             headerType: 4,
             contextInfo: {
                 externalAdReply: {
-                    title: "Blade-Repo",
+                    title: "Mac-Repo",
                     body: "Easy to Use",
                     thumbnail: log0,
                     mediaType: 4,
@@ -178,14 +147,15 @@ cmd({
         timestampe = speed();
         latensie = speed() - timestampe;
         let ter = `
-🔰 *${tlang().title}* 🔰
-*🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
-*⚡Speed:* ${latensie.toFixed(4)} ms
-*🚦Uptime:* ${runtime(process.uptime())}
-*🕸Version:* 0.0.7
-*👤Owner:*  ${Config.ownername}
-*Powered by ${tlang().title}*
-`;
+ㅤ ────────────────────────── .°୭̥ ❁ 	
+╰─➤｡･:*˚:✧｡ *${tlang().title}* ｡･:*˚:✧｡
+╰─➤*🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
+╰─➤*⚡️Speed:* ${latensie.toFixed(4)} ms
+╰─➤*⏱Uptime:* ${runtime(process.uptime())}
+╰─➤*📡Version:* 0.0.8
+╰─➤*👤Owner:*  ${Config.ownername}
+╰─➤*Powered by ${tlang().title}*
+°୭̥ ❁ ───────────────────────── .°୭̥ ❁ `;
         let buttonMessaged = {
             image: {
                 url: await botpic(),
@@ -212,18 +182,3 @@ cmd({
 )
 
 //---------------------------------------------------------------------------
-cmd({
-    pattern: "theme",
-    desc: "To find all themes",
-    category: "general",
-    filename: __filename,
-},
-async(Void, citel,text,{isCreator}) => {
-
-if(!isCreator) return citel.reply(tlang().owner);
-let str="*All available themes in ʙʟᴀᴅᴇ-ᴍᴅ*"
-str+=`  \n1. GOJO\n2. SONIC-MD\n3. AYANOKOJI\n4. DEKU\n5. RENGOKU\n6. GENOS\n7. GABIMARU\n8. GOKU\n9. ERENJAEGER\n10. LUFFY\n11. NARUTO\n12. NEZUKO\n13. PARKER\n14. blade-md\n15. MAKIMA\n16. THOMAS\n17. PATRICK\n\n these are the themes of ʙʟᴀᴅᴇ-ᴍᴅ Userbot.\_Reply ${prefix}setvar THEME:ZEROTWO`
-return citel.reply(str)
-    
-}
-)
