@@ -4,7 +4,7 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/co
 
 //═══════[Required Variables]════════\\
 global.owner = process.env.OWNER_NUMBER || '94784280074'  // Make SURE its Not Be Empty, Else Bot Stoped And Errors,
-global.mongodb = process.env.MONGODB_URI || "mongodb+srv://ahil1:787191784abhi@ahil1.kzr1tt3.mongodb.net/?retrywrites=true&w=majority"
+global.mongodb = process.env.MONGODB_URI || "mongodb+srv://darknim078:<nim212121>@cluster0.ut7eufx.mongodb.net/?retryWrites=true&w=majority"
 global.port= process.env.PORT || 5000
 global.email = 'maxdavid126@gmail.com'
 global.github = 'https://github.com/darknim999/DARK-NIM-MD/edit/main/config.js'
