@@ -52,7 +52,7 @@
 
  <p align="center">  
  <a href="https://telegra.ph/file/896953d764d69c906a4b7.jpg">
-    <img alt="FORZEN MD MD OWNER" height="180" src="https://telegra.ph/file/5712bea4ea7560cfb8f5f.jpg">
+    <img alt="DARK NIM MD MD OWNER" height="170" src="https://telegra.ph/file/5712bea4ea7560cfb8f5f.jpg">
 
 **[» Contact For](https://wa.me/+94784280074)**
 ㅤ
