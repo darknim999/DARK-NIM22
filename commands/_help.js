@@ -19,7 +19,7 @@ const readmore = long.repeat(4001)
 const Secktor = require('../lib/plugin')
 
     //---------------------------------------------------------------------------
-Secktor.cmd({
+cmd({
             pattern: "help",
             alias: ["menu"],
             desc: "Help list",
@@ -90,7 +90,7 @@ Secktor.cmd({
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
+cmd({
             pattern: "cmd",
             desc: "cmd1",
             category: "general"
@@ -122,7 +122,7 @@ for (let i = 0; i < commands.length; i++)
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
+cmd({
         pattern: "owner",
         desc: "To find owner number",
         category: "general",
@@ -159,7 +159,7 @@ Secktor.cmd({
     }
 )
 
-Secktor.cmd({
+cmd({
     pattern: "file",
     desc: "to get extact name where that command is in repo.\nSo user can edit that.",
     category: "general",
