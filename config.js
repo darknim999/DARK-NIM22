@@ -13,7 +13,7 @@ global.gurl = 'https://instagram.com/' // add your username
 global.sudo = process.env.SUDO || '256705036288'
 global.devs = '256705036288';
 global.website = 'https://github.com/darknim999/DARK-NIM-MD' //wa.me/+25000000000000
-global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://telegra.ph/file/8ec95da555e8347af71bd.jpg'
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://telegra.ph/file/153fa67a18b16949274ba.jpg'
 module.exports = {
   botname:   process.env.BOT_NAME === undefined ? 'NIM 𝐁𝐨𝐭' : process.env.BOT_NAME,
   ownername: process.env.OWNER_NAME === undefined ? 'nim' : process.env.OWNER_NAME,
