@@ -1,5 +1,5 @@
 {
-  "name": "DARK NIM",
+  "name": "dark-nim",
   "version": "0.0.7",
   "description": "Multi device whatsapp bot by alex tv.",
   "main": "lib/client.js",
