@@ -6,8 +6,8 @@
   "type": "commonjs",
   "license": "GPL-3.0",
   "scripts": {
-    "start": "pm2 start lib/client.js --deep-monitoring --attach --name DARK-NIM-MD",
-    "stop": "pm2 stop DARK-NIM-MD"
+    "start": "pm2 start lib/client.js --deep-monitoring --attach --name nim",
+    "stop": "pm2 stop nim"
   },
   "author": "sampandey",
   "dependencies": {
